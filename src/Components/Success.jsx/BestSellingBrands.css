@@ -1,0 +1,125 @@
+
+
+.brands-section {
+  background: white;
+  padding: 48px 16px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.brands-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 24px;
+}
+
+.brand-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.brand-circle {
+  width: 96px;
+  height: 96px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card:hover .brand-circle {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.brand-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.brand-title {
+  font-size: 14px;
+  color: #666;
+  display: block;
+}
+
+.fallback-text {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Make it work on tablets */
+@media (max-width: 1024px) {
+  .brands-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Make it work on phones */
+@media (max-width: 768px) {
+  .brands-section {
+    padding: 32px 16px;
+  }
+  
+  .section-heading {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .brands-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .brand-circle {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+  }
+  
+  .brand-image {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .brand-title {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .brands-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .brand-circle {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .brand-image {
+    width: 60px;
+    height: 60px;
+  }
+}

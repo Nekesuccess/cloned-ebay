@@ -1,0 +1,111 @@
+.Trello-Header-Wrapper{
+  width: 100%;
+  height: 8vh;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.Trello-Header-Container{
+  width: 80%;
+  height: 50px;
+  /* background-color: blue; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.Trello-left-side{
+  width: 50%;
+  height: 50px;
+  /* background: yellow; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navstyle1{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.Trello-right-side{
+  width: 50%;
+  height: 50px;
+  /* background: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+.button-style-trello{
+  width: 20%;
+  height: 100%;
+  background-color: blue;
+  color: white;
+}
+.menu-icon{
+  display: none;
+  cursor: pointer;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 60px; 
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  flex-direction: column;
+  display: flex;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.dropdown-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+  background: #f2f2f2;
+}
+.dropdown-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.dropdown-button2{
+ border: 1px solid blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 10px;
+  color: black;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .button-style-trello,
+  .Trello-right-side h3 {
+    display: none; /* hide login & button */
+  } 
+  .navstyle1{
+    display: none;
+  }
+
+  .menu-icon {
+    display: block; /* show menu icon */
+  }
+}
+
